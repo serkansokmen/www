@@ -1,5 +1,5 @@
 {
-  "app": {
+  "appData": {
     "links": [{
       "name": "github",
       "icon": "images/github.svg",

@@ -1,6 +1,5 @@
 System.config({
   baseURL: "/",
-  trace: true,
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -14,243 +13,43 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "build.js": [
-      "app/main.js",
-      "npm:babel-runtime@5.8.38/helpers/get.js",
-      "npm:babel-runtime@5.8.38/helpers/create-class.js",
-      "npm:babel-runtime@5.8.38/helpers/class-call-check.js",
-      "npm:babel-runtime@5.8.38/helpers/inherits.js",
-      "npm:react-dom@0.14.8.js",
-      "npm:react@0.14.8.js",
-      "npm:react-retina-image@2.0.0.js",
-      "npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js",
-      "app/data.json!github:systemjs/plugin-json@0.1.0.js",
-      "npm:babel-runtime@5.8.38/core-js/object/define-property.js",
-      "npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js",
-      "npm:babel-runtime@5.8.38/core-js/object/create.js",
-      "npm:react@0.14.8/react.js",
-      "npm:react-dom@0.14.8/index.js",
-      "npm:react-retina-image@2.0.0/dist/index.js",
-      "npm:core-js@1.2.6/library/fn/object/get-own-property-descriptor.js",
-      "npm:react@0.14.8/lib/React.js",
-      "npm:core-js@1.2.6/library/fn/object/create.js",
-      "npm:core-js@1.2.6/library/fn/object/define-property.js",
-      "npm:core-js@1.2.6/library/fn/object/set-prototype-of.js",
-      "npm:react@0.14.8/lib/ReactDOM.js",
-      "npm:is-retina@1.0.3.js",
-      "npm:image-exists@1.1.0.js",
-      "npm:isarray@0.0.1.js",
-      "npm:object-assign@4.0.1.js",
-      "github:jspm/nodelibs-path@0.1.0.js",
-      "npm:array-equal@1.0.0.js",
-      "npm:core-js@1.2.6/library/modules/$.js",
-      "npm:core-js@1.2.6/library/modules/$.core.js",
-      "npm:core-js@1.2.6/library/modules/es6.object.get-own-property-descriptor.js",
-      "npm:react@0.14.8/lib/ReactDOMServer.js",
-      "npm:core-js@1.2.6/library/modules/es6.object.set-prototype-of.js",
-      "npm:react@0.14.8/lib/ReactIsomorphic.js",
-      "npm:react@0.14.8/lib/deprecated.js",
-      "npm:react@0.14.8/lib/Object.assign.js",
-      "npm:react@0.14.8/lib/ReactCurrentOwner.js",
-      "npm:react@0.14.8/lib/ReactDOMTextComponent.js",
-      "npm:react@0.14.8/lib/ReactPerf.js",
-      "npm:react@0.14.8/lib/ReactDefaultInjection.js",
-      "npm:react@0.14.8/lib/ReactInstanceHandles.js",
-      "npm:react@0.14.8/lib/ReactVersion.js",
-      "npm:fbjs@0.6.1/lib/ExecutionEnvironment.js",
-      "npm:react@0.14.8/lib/ReactReconciler.js",
-      "github:jspm/nodelibs-process@0.1.2.js",
-      "npm:react@0.14.8/lib/renderSubtreeIntoContainer.js",
-      "npm:fbjs@0.6.1/lib/warning.js",
-      "npm:react@0.14.8/lib/ReactMount.js",
-      "npm:react@0.14.8/lib/ReactUpdates.js",
-      "npm:react@0.14.8/lib/findDOMNode.js",
-      "npm:is-retina@1.0.3/index.js",
-      "npm:object-assign@4.0.1/index.js",
-      "npm:image-exists@1.1.0/index.js",
-      "npm:isarray@0.0.1/index.js",
-      "github:jspm/nodelibs-path@0.1.0/index.js",
-      "npm:array-equal@1.0.0/index.js",
-      "npm:core-js@1.2.6/library/modules/$.export.js",
-      "npm:core-js@1.2.6/library/modules/$.object-sap.js",
-      "npm:core-js@1.2.6/library/modules/$.to-iobject.js",
-      "npm:core-js@1.2.6/library/modules/$.set-proto.js",
-      "npm:react@0.14.8/lib/ReactComponent.js",
-      "npm:react@0.14.8/lib/ReactServerRendering.js",
-      "npm:react@0.14.8/lib/ReactClass.js",
-      "npm:react@0.14.8/lib/ReactDOMFactories.js",
-      "npm:react@0.14.8/lib/ReactElementValidator.js",
-      "npm:react@0.14.8/lib/ReactChildren.js",
-      "npm:react@0.14.8/lib/escapeTextContentForBrowser.js",
-      "npm:react@0.14.8/lib/ClientReactRootIndex.js",
-      "npm:react@0.14.8/lib/ServerReactRootIndex.js",
-      "npm:react@0.14.8/lib/ReactReconcileTransaction.js",
-      "npm:react@0.14.8/lib/ReactInjection.js",
-      "npm:react@0.14.8/lib/SVGDOMPropertyConfig.js",
-      "npm:react@0.14.8/lib/ReactElement.js",
-      "npm:react@0.14.8/lib/ReactComponentBrowserEnvironment.js",
-      "npm:react@0.14.8/lib/ReactPropTypes.js",
-      "npm:react@0.14.8/lib/onlyChild.js",
-      "npm:react@0.14.8/lib/DOMPropertyOperations.js",
-      "npm:react@0.14.8/lib/DOMChildrenOperations.js",
-      "npm:react@0.14.8/lib/setTextContent.js",
-      "npm:react@0.14.8/lib/validateDOMNesting.js",
-      "npm:react@0.14.8/lib/BeforeInputEventPlugin.js",
-      "npm:react@0.14.8/lib/ChangeEventPlugin.js",
-      "npm:react@0.14.8/lib/DefaultEventPluginOrder.js",
-      "npm:react@0.14.8/lib/HTMLDOMPropertyConfig.js",
-      "npm:react@0.14.8/lib/ReactBrowserComponentMixin.js",
-      "npm:react@0.14.8/lib/ReactDefaultBatchingStrategy.js",
-      "npm:react@0.14.8/lib/EnterLeaveEventPlugin.js",
-      "npm:react@0.14.8/lib/ReactDOMComponent.js",
-      "npm:react@0.14.8/lib/ReactEventListener.js",
-      "npm:react@0.14.8/lib/SelectEventPlugin.js",
-      "npm:react@0.14.8/lib/SimpleEventPlugin.js",
-      "npm:react@0.14.8/lib/ReactRootIndex.js",
-      "npm:fbjs@0.6.1/lib/emptyFunction.js",
-      "npm:fbjs@0.6.1/lib/invariant.js",
-      "github:jspm/nodelibs-process@0.1.2/index.js",
-      "npm:react@0.14.8/lib/ReactRef.js",
-      "npm:react@0.14.8/lib/ReactDefaultPerf.js",
-      "npm:react@0.14.8/lib/DOMProperty.js",
-      "npm:react@0.14.8/lib/ReactInstanceMap.js",
-      "npm:react@0.14.8/lib/ReactEmptyComponentRegistry.js",
-      "npm:react@0.14.8/lib/ReactDOMFeatureFlags.js",
-      "npm:react@0.14.8/lib/shouldUpdateReactComponent.js",
-      "npm:react@0.14.8/lib/ReactMarkupChecksum.js",
-      "npm:fbjs@0.6.1/lib/containsNode.js",
-      "npm:react@0.14.8/lib/ReactBrowserEventEmitter.js",
-      "npm:fbjs@0.6.1/lib/emptyObject.js",
-      "npm:react@0.14.8/lib/ReactUpdateQueue.js",
-      "npm:react@0.14.8/lib/instantiateReactComponent.js",
-      "npm:react@0.14.8/lib/setInnerHTML.js",
-      "npm:react@0.14.8/lib/CallbackQueue.js",
-      "npm:react@0.14.8/lib/PooledClass.js",
-      "npm:react@0.14.8/lib/Transaction.js",
-      "npm:path-browserify@0.0.0.js",
-      "npm:core-js@1.2.6/library/modules/$.global.js",
-      "npm:core-js@1.2.6/library/modules/$.fails.js",
-      "npm:core-js@1.2.6/library/modules/$.is-object.js",
-      "npm:core-js@1.2.6/library/modules/$.defined.js",
-      "npm:react@0.14.8/lib/ReactServerBatchingStrategy.js",
-      "npm:fbjs@0.6.1/lib/keyOf.js",
-      "npm:fbjs@0.6.1/lib/mapObject.js",
-      "npm:react@0.14.8/lib/getIteratorFn.js",
-      "npm:core-js@1.2.6/library/modules/$.ctx.js",
-      "npm:core-js@1.2.6/library/modules/$.iobject.js",
-      "npm:core-js@1.2.6/library/modules/$.an-object.js",
-      "npm:react@0.14.8/lib/canDefineProperty.js",
-      "npm:fbjs@0.6.1/lib/keyMirror.js",
-      "npm:react@0.14.8/lib/ReactPropTypeLocationNames.js",
-      "npm:react@0.14.8/lib/ReactNoopUpdateQueue.js",
-      "npm:react@0.14.8/lib/ReactServerRenderingTransaction.js",
-      "npm:react@0.14.8/lib/ReactPropTypeLocations.js",
-      "npm:react@0.14.8/lib/getEventTarget.js",
-      "npm:react@0.14.8/lib/isTextInputElement.js",
-      "npm:react@0.14.8/lib/ReactDOMButton.js",
-      "npm:fbjs@0.6.1/lib/shallowEqual.js",
-      "npm:fbjs@0.6.1/lib/getUnboundedScrollPosition.js",
-      "npm:fbjs@0.6.1/lib/getActiveElement.js",
-      "npm:react@0.14.8/lib/ReactEmptyComponent.js",
-      "npm:react@0.14.8/lib/quoteAttributeValueForBrowser.js",
-      "npm:react@0.14.8/lib/FallbackCompositionState.js",
-      "npm:react@0.14.8/lib/SyntheticCompositionEvent.js",
-      "npm:react@0.14.8/lib/SyntheticInputEvent.js",
-      "npm:react@0.14.8/lib/SyntheticMouseEvent.js",
-      "npm:react@0.14.8/lib/SyntheticClipboardEvent.js",
-      "npm:react@0.14.8/lib/SyntheticKeyboardEvent.js",
-      "npm:react@0.14.8/lib/SyntheticFocusEvent.js",
-      "npm:react@0.14.8/lib/SyntheticDragEvent.js",
-      "npm:react@0.14.8/lib/SyntheticTouchEvent.js",
-      "npm:react@0.14.8/lib/ReactMultiChild.js",
-      "npm:fbjs@0.6.1/lib/EventListener.js",
-      "npm:react@0.14.8/lib/traverseAllChildren.js",
-      "npm:react@0.14.8/lib/ReactInputSelection.js",
-      "npm:react@0.14.8/lib/EventPluginHub.js",
-      "npm:react@0.14.8/lib/ReactComponentEnvironment.js",
-      "npm:react@0.14.8/lib/ReactNativeComponent.js",
-      "npm:react@0.14.8/lib/ReactDOMIDOperations.js",
-      "npm:react@0.14.8/lib/Danger.js",
-      "npm:react@0.14.8/lib/EventPropagators.js",
-      "npm:react@0.14.8/lib/ReactMultiChildUpdateTypes.js",
-      "npm:react@0.14.8/lib/EventConstants.js",
-      "npm:react@0.14.8/lib/SyntheticEvent.js",
-      "npm:react@0.14.8/lib/isEventSupported.js",
-      "npm:react@0.14.8/lib/AutoFocusUtils.js",
-      "npm:react@0.14.8/lib/CSSPropertyOperations.js",
-      "npm:react@0.14.8/lib/ReactDOMInput.js",
-      "npm:react@0.14.8/lib/ReactDOMOption.js",
-      "npm:react@0.14.8/lib/ReactDOMSelect.js",
-      "npm:react@0.14.8/lib/ReactDOMTextarea.js",
-      "npm:react@0.14.8/lib/getEventCharCode.js",
-      "npm:react@0.14.8/lib/SyntheticUIEvent.js",
-      "npm:react@0.14.8/lib/SyntheticWheelEvent.js",
-      "npm:process@0.11.2.js",
-      "npm:fbjs@0.6.1/lib/performanceNow.js",
-      "npm:react@0.14.8/lib/ReactDefaultPerfAnalysis.js",
-      "npm:react@0.14.8/lib/ReactOwner.js",
-      "npm:react@0.14.8/lib/adler32.js",
-      "npm:react@0.14.8/lib/ViewportMetrics.js",
-      "npm:react@0.14.8/lib/ReactEventEmitterMixin.js",
-      "npm:fbjs@0.6.1/lib/isTextNode.js",
-      "npm:path-browserify@0.0.0/index.js",
-      "npm:react@0.14.8/lib/EventPluginRegistry.js",
-      "npm:react@0.14.8/lib/ReactCompositeComponent.js",
-      "npm:core-js@1.2.6/library/modules/$.a-function.js",
-      "npm:core-js@1.2.6/library/modules/$.cof.js",
-      "npm:react@0.14.8/lib/getEventModifierState.js",
-      "npm:fbjs@0.6.1/lib/focusNode.js",
-      "npm:react@0.14.8/lib/forEachAccumulated.js",
-      "npm:react@0.14.8/lib/CSSProperty.js",
-      "npm:fbjs@0.6.1/lib/memoizeStringOnly.js",
-      "npm:react@0.14.8/lib/getEventKey.js",
-      "npm:fbjs@0.6.1/lib/camelizeStyleName.js",
-      "npm:react@0.14.8/lib/dangerousStyleValue.js",
-      "npm:fbjs@0.6.1/lib/hyphenateStyleName.js",
-      "npm:react@0.14.8/lib/ReactErrorUtils.js",
-      "npm:fbjs@0.6.1/lib/createNodesFromMarkup.js",
-      "npm:fbjs@0.6.1/lib/getMarkupWrap.js",
-      "npm:react@0.14.8/lib/getTextContentAccessor.js",
-      "npm:react@0.14.8/lib/ReactChildReconciler.js",
-      "npm:react@0.14.8/lib/flattenChildren.js",
-      "npm:react@0.14.8/lib/ReactDOMSelection.js",
-      "npm:react@0.14.8/lib/EventPluginUtils.js",
-      "npm:react@0.14.8/lib/accumulateInto.js",
-      "npm:react@0.14.8/lib/LinkedValueUtils.js",
-      "npm:process@0.11.2/browser.js",
-      "npm:fbjs@0.6.1/lib/performance.js",
-      "npm:fbjs@0.6.1/lib/isNode.js",
-      "npm:fbjs@0.6.1/lib/camelize.js",
-      "npm:fbjs@0.6.1/lib/hyphenate.js",
-      "npm:react@0.14.8/lib/getNodeForCharacterOffset.js",
-      "npm:fbjs@0.6.1/lib/createArrayFromMixed.js",
-      "app/main.css!css.js",
-      "npm:fbjs@0.6.1/lib/toArray.js"
-    ]
+  sassPluginOptions: {
+    "autoprefixer": true
   },
 
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "bootstrap-sass": "github:twbs/bootstrap-sass@3.3.6",
     "box2d": "npm:box2d@1.0.0",
     "clean-css": "npm:clean-css@3.4.11",
     "core-js": "npm:core-js@1.2.6",
+    "css": "npm:jspm-loader-css@1.1.0",
     "fetch": "npm:whatwg-fetch@0.11.0",
     "firebase": "github:firebase/firebase-bower@2.4.2",
     "image": "github:systemjs/plugin-image@0.1.0",
+    "instafeed.js": "npm:instafeed.js@1.4.1",
     "json": "github:systemjs/plugin-json@0.1.0",
     "jspm-loader-css": "npm:jspm-loader-css@1.1.0",
+    "p5": "github:processing/p5.js@0.4.23",
     "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
+    "processing/p5.js": "github:processing/p5.js@0.4.23",
     "react": "npm:react@0.14.8",
     "react-dom": "npm:react-dom@0.14.8",
     "react-retina-image": "npm:react-retina-image@2.0.0",
+    "scss": "github:mobilexag/plugin-sass@0.4.0",
     "whatwg-fetch": "npm:whatwg-fetch@0.11.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.6.0"
+    },
+    "github:jspm/nodelibs-constants@0.1.0": {
+      "constants-browserify": "npm:constants-browserify@0.0.1"
+    },
+    "github:jspm/nodelibs-crypto@0.1.0": {
+      "crypto-browserify": "npm:crypto-browserify@3.11.0"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -278,11 +77,27 @@ System.config({
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
     },
+    "github:jspm/nodelibs-string_decoder@0.1.0": {
+      "string_decoder": "npm:string_decoder@0.10.31"
+    },
     "github:jspm/nodelibs-url@0.1.0": {
       "url": "npm:url@0.10.3"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:jspm/nodelibs-vm@0.1.0": {
+      "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:mobilexag/plugin-sass@0.4.0": {
+      "autoprefixer": "npm:autoprefixer@6.3.6",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "lodash": "npm:lodash@4.7.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "postcss": "npm:postcss@5.0.19",
+      "reqwest": "github:ded/reqwest@2.0.5",
+      "sass.js": "npm:sass.js@0.9.7",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -290,14 +105,91 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:asn1.js@4.5.2": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "bn.js": "npm:bn.js@4.11.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "inherits": "npm:inherits@2.0.1",
+      "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
+      "vm": "github:jspm/nodelibs-vm@0.1.0"
+    },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
+    },
+    "npm:autoprefixer@6.3.6": {
+      "browserslist": "npm:browserslist@1.3.1",
+      "caniuse-db": "npm:caniuse-db@1.0.30000446",
+      "normalize-range": "npm:normalize-range@0.1.2",
+      "num2fraction": "npm:num2fraction@1.2.2",
+      "postcss": "npm:postcss@5.0.19",
+      "postcss-value-parser": "npm:postcss-value-parser@3.3.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:babel-runtime@5.8.38": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:bn.js@4.11.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
     "npm:box2d@1.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:browserify-aes@1.0.6": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "buffer-xor": "npm:buffer-xor@1.0.3",
+      "cipher-base": "npm:cipher-base@1.0.2",
+      "create-hash": "npm:create-hash@1.1.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "evp_bytestokey": "npm:evp_bytestokey@1.0.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "inherits": "npm:inherits@2.0.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:browserify-cipher@1.0.0": {
+      "browserify-aes": "npm:browserify-aes@1.0.6",
+      "browserify-des": "npm:browserify-des@1.0.0",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "evp_bytestokey": "npm:evp_bytestokey@1.0.0"
+    },
+    "npm:browserify-des@1.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "cipher-base": "npm:cipher-base@1.0.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "des.js": "npm:des.js@1.0.0",
+      "inherits": "npm:inherits@2.0.1"
+    },
+    "npm:browserify-rsa@4.0.1": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "constants": "github:jspm/nodelibs-constants@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "randombytes": "npm:randombytes@2.0.3"
+    },
+    "npm:browserify-sign@4.0.0": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "browserify-rsa": "npm:browserify-rsa@4.0.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "create-hmac": "npm:create-hmac@1.1.4",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "elliptic": "npm:elliptic@6.2.3",
+      "inherits": "npm:inherits@2.0.1",
+      "parse-asn1": "npm:parse-asn1@5.0.0",
+      "stream": "github:jspm/nodelibs-stream@0.1.0"
+    },
+    "npm:browserslist@1.3.1": {
+      "caniuse-db": "npm:caniuse-db@1.0.30000446",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:buffer-xor@1.0.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:buffer@3.6.0": {
       "base64-js": "npm:base64-js@0.0.8",
@@ -306,6 +198,12 @@ System.config({
       "ieee754": "npm:ieee754@1.1.6",
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:cipher-base@1.0.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "inherits": "npm:inherits@2.0.1",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0"
     },
     "npm:clean-css@3.4.11": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -328,6 +226,9 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:constants-browserify@0.0.1": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -336,6 +237,40 @@ System.config({
     },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:create-ecdh@4.0.0": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "elliptic": "npm:elliptic@6.2.3"
+    },
+    "npm:create-hash@1.1.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "cipher-base": "npm:cipher-base@1.0.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "inherits": "npm:inherits@2.0.1",
+      "ripemd160": "npm:ripemd160@1.0.1",
+      "sha.js": "npm:sha.js@2.4.5"
+    },
+    "npm:create-hmac@1.1.4": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "inherits": "npm:inherits@2.0.1",
+      "stream": "github:jspm/nodelibs-stream@0.1.0"
+    },
+    "npm:crypto-browserify@3.11.0": {
+      "browserify-cipher": "npm:browserify-cipher@1.0.0",
+      "browserify-sign": "npm:browserify-sign@4.0.0",
+      "create-ecdh": "npm:create-ecdh@4.0.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "create-hmac": "npm:create-hmac@1.1.4",
+      "diffie-hellman": "npm:diffie-hellman@5.0.2",
+      "inherits": "npm:inherits@2.0.1",
+      "pbkdf2": "npm:pbkdf2@3.0.4",
+      "public-encrypt": "npm:public-encrypt@4.0.0",
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:css-modules-loader-core@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -354,6 +289,31 @@ System.config({
     "npm:debounce@1.0.0": {
       "date-now": "npm:date-now@1.0.1"
     },
+    "npm:des.js@1.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "inherits": "npm:inherits@2.0.1",
+      "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+    },
+    "npm:diffie-hellman@5.0.2": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "miller-rabin": "npm:miller-rabin@4.0.0",
+      "randombytes": "npm:randombytes@2.0.3",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:elliptic@6.2.3": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "brorand": "npm:brorand@1.0.5",
+      "hash.js": "npm:hash.js@1.0.3",
+      "inherits": "npm:inherits@2.0.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:evp_bytestokey@1.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0"
+    },
     "npm:fastparse@1.1.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -365,6 +325,9 @@ System.config({
     },
     "npm:has-flag@1.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:hash.js@1.0.3": {
+      "inherits": "npm:inherits@2.0.1"
     },
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
@@ -381,8 +344,25 @@ System.config({
       "path": "npm:path@0.12.7",
       "toposort": "npm:toposort@0.2.12"
     },
+    "npm:lodash@4.7.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:miller-rabin@4.0.0": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "brorand": "npm:brorand@1.0.5"
+    },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
+    },
+    "npm:parse-asn1@5.0.0": {
+      "asn1.js": "npm:asn1.js@4.5.2",
+      "browserify-aes": "npm:browserify-aes@1.0.6",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "evp_bytestokey": "npm:evp_bytestokey@1.0.0",
+      "pbkdf2": "npm:pbkdf2@3.0.4",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -390,6 +370,15 @@ System.config({
     "npm:path@0.12.7": {
       "process": "npm:process@0.11.2",
       "util": "npm:util@0.10.3"
+    },
+    "npm:pbkdf2@3.0.4": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "create-hmac": "npm:create-hmac@1.1.4",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:postcss-modules-extract-imports@1.0.0": {
       "postcss": "npm:postcss@5.0.10",
@@ -431,7 +420,21 @@ System.config({
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
+    "npm:public-encrypt@4.0.0": {
+      "bn.js": "npm:bn.js@4.11.1",
+      "browserify-rsa": "npm:browserify-rsa@4.0.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "create-hash": "npm:create-hash@1.1.2",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "parse-asn1": "npm:parse-asn1@5.0.0",
+      "randombytes": "npm:randombytes@2.0.3"
+    },
     "npm:punycode@1.3.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:randombytes@2.0.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react-dom@0.14.8": {
@@ -459,6 +462,23 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "npm:ripemd160@1.0.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:sass.js@0.9.7": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:sha.js@2.4.5": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:source-map@0.4.4": {
       "amdefine": "npm:amdefine@1.0.0",
@@ -492,6 +512,9 @@ System.config({
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:vm-browserify@0.0.4": {
+      "indexof": "npm:indexof@0.0.1"
     }
   }
 });

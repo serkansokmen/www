@@ -23,11 +23,13 @@
   },
   "jspm": {
     "dependencies": {
+      "bootstrap-sass": "github:twbs/bootstrap-sass@^3.3.6",
       "box2d": "npm:box2d@^1.0.0",
       "css": "npm:jspm-loader-css@^1.1.0",
       "fetch": "npm:whatwg-fetch@^0.11.0",
       "firebase": "github:firebase/firebase-bower@^2.4.2",
       "image": "github:systemjs/plugin-image@^0.1.0",
+      "instafeed.js": "npm:instafeed.js@^1.4.1",
       "json": "github:systemjs/plugin-json@^0.1.0",
       "p5": "github:processing/p5.js@^0.4.23",
       "postcss-simple-vars": "npm:postcss-simple-vars@^1.2.0",
@@ -35,6 +37,7 @@
       "react": "npm:react@^0.14.8",
       "react-dom": "npm:react-dom@^0.14.8",
       "react-retina-image": "npm:react-retina-image@^2.0.0",
+      "scss": "github:mobilexag/plugin-sass@^0.4.0",
       "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
     },
     "devDependencies": {

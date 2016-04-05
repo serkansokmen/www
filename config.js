@@ -17,26 +17,688 @@ System.config({
     "autoprefixer": true
   },
 
+  depCache: {
+    "main.js": [
+      "babel-runtime/core-js/object/keys",
+      "./main.json!json",
+      "pixi.js"
+    ],
+    "npm:babel-runtime@5.8.38/core-js/object/keys.js": [
+      "core-js/library/fn/object/keys"
+    ],
+    "npm:pixi.js@3.0.10.js": [
+      "npm:pixi.js@3.0.10/src/index.js"
+    ],
+    "npm:core-js@1.2.6/library/fn/object/keys.js": [
+      "../../modules/es6.object.keys",
+      "../../modules/$.core"
+    ],
+    "npm:pixi.js@3.0.10/src/index.js": [
+      "./polyfill/index",
+      "./core/index",
+      "./extras/index",
+      "./filters/index",
+      "./interaction/index",
+      "./loaders/index",
+      "./mesh/index",
+      "./accessibility/index",
+      "./deprecation"
+    ],
+    "npm:core-js@1.2.6/library/modules/es6.object.keys.js": [
+      "./$.to-object",
+      "./$.object-sap"
+    ],
+    "npm:pixi.js@3.0.10/src/polyfill/index.js": [
+      "./Object.assign",
+      "./requestAnimationFrame",
+      "./Math.sign"
+    ],
+    "npm:pixi.js@3.0.10/src/core/index.js": [
+      "./const",
+      "./math/index",
+      "./utils/index",
+      "./ticker/index",
+      "./display/DisplayObject",
+      "./display/Container",
+      "./sprites/Sprite",
+      "./particles/ParticleContainer",
+      "./sprites/webgl/SpriteRenderer",
+      "./particles/webgl/ParticleRenderer",
+      "./text/Text",
+      "./graphics/Graphics",
+      "./graphics/GraphicsData",
+      "./graphics/webgl/GraphicsRenderer",
+      "./textures/Texture",
+      "./textures/BaseTexture",
+      "./textures/RenderTexture",
+      "./textures/VideoBaseTexture",
+      "./textures/TextureUvs",
+      "./renderers/canvas/CanvasRenderer",
+      "./renderers/canvas/utils/CanvasGraphics",
+      "./renderers/canvas/utils/CanvasBuffer",
+      "./renderers/webgl/WebGLRenderer",
+      "./renderers/webgl/managers/WebGLManager",
+      "./renderers/webgl/managers/ShaderManager",
+      "./renderers/webgl/shaders/Shader",
+      "./renderers/webgl/shaders/TextureShader",
+      "./renderers/webgl/shaders/PrimitiveShader",
+      "./renderers/webgl/shaders/ComplexPrimitiveShader",
+      "./renderers/webgl/utils/ObjectRenderer",
+      "./renderers/webgl/utils/RenderTarget",
+      "./renderers/webgl/filters/AbstractFilter",
+      "./renderers/webgl/filters/FXAAFilter",
+      "./renderers/webgl/filters/SpriteMaskFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/index.js": [
+      "./ascii/AsciiFilter",
+      "./bloom/BloomFilter",
+      "./blur/BlurFilter",
+      "./blur/BlurXFilter",
+      "./blur/BlurYFilter",
+      "./blur/BlurDirFilter",
+      "./color/ColorMatrixFilter",
+      "./color/ColorStepFilter",
+      "./convolution/ConvolutionFilter",
+      "./crosshatch/CrossHatchFilter",
+      "./displacement/DisplacementFilter",
+      "./dot/DotScreenFilter",
+      "./gray/GrayFilter",
+      "./dropshadow/DropShadowFilter",
+      "./invert/InvertFilter",
+      "./noise/NoiseFilter",
+      "./pixelate/PixelateFilter",
+      "./rgb/RGBSplitFilter",
+      "./shockwave/ShockwaveFilter",
+      "./sepia/SepiaFilter",
+      "./blur/SmartBlurFilter",
+      "./tiltshift/TiltShiftFilter",
+      "./tiltshift/TiltShiftXFilter",
+      "./tiltshift/TiltShiftYFilter",
+      "./twist/TwistFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/index.js": [
+      "./cacheAsBitmap",
+      "./getChildByName",
+      "./getGlobalPosition",
+      "./MovieClip",
+      "./TilingSprite",
+      "./BitmapText"
+    ],
+    "npm:pixi.js@3.0.10/src/interaction/index.js": [
+      "./InteractionData",
+      "./InteractionManager",
+      "./interactiveTarget"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/index.js": [
+      "./Mesh",
+      "./Plane",
+      "./Rope",
+      "./webgl/MeshRenderer",
+      "./webgl/MeshShader"
+    ],
+    "npm:pixi.js@3.0.10/src/accessibility/index.js": [
+      "./accessibleTarget",
+      "./AccessibilityManager"
+    ],
+    "npm:pixi.js@3.0.10/src/loaders/index.js": [
+      "./loader",
+      "./bitmapFontParser",
+      "./spritesheetParser",
+      "./textureParser",
+      "resource-loader"
+    ],
+    "npm:pixi.js@3.0.10/src/deprecation.js": [
+      "./core/index",
+      "./mesh/index",
+      "./extras/index",
+      "./filters/index"
+    ],
+    "npm:core-js@1.2.6/library/modules/$.to-object.js": [
+      "./$.defined"
+    ],
+    "npm:core-js@1.2.6/library/modules/$.object-sap.js": [
+      "./$.export",
+      "./$.core",
+      "./$.fails"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/index.js": [
+      "./Point",
+      "./Matrix",
+      "./GroupD8",
+      "./shapes/Circle",
+      "./shapes/Ellipse",
+      "./shapes/Polygon",
+      "./shapes/Rectangle",
+      "./shapes/RoundedRectangle"
+    ],
+    "npm:pixi.js@3.0.10/src/core/display/Container.js": [
+      "../math/index",
+      "../utils/index",
+      "./DisplayObject",
+      "../textures/RenderTexture"
+    ],
+    "npm:pixi.js@3.0.10/src/core/ticker/index.js": [
+      "./Ticker"
+    ],
+    "npm:pixi.js@3.0.10/src/core/sprites/Sprite.js": [
+      "../math/index",
+      "../textures/Texture",
+      "../display/Container",
+      "../renderers/canvas/utils/CanvasTinter",
+      "../utils/index",
+      "../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/particles/ParticleContainer.js": [
+      "../display/Container",
+      "../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/sprites/webgl/SpriteRenderer.js": [
+      "../../renderers/webgl/utils/ObjectRenderer",
+      "../../renderers/webgl/WebGLRenderer",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/text/Text.js": [
+      "../sprites/Sprite",
+      "../textures/Texture",
+      "../math/index",
+      "../utils/index",
+      "../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/graphics/Graphics.js": [
+      "../display/Container",
+      "../textures/Texture",
+      "../renderers/canvas/utils/CanvasBuffer",
+      "../renderers/canvas/utils/CanvasGraphics",
+      "./GraphicsData",
+      "../math/index",
+      "../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/particles/webgl/ParticleRenderer.js": [
+      "../../renderers/webgl/utils/ObjectRenderer",
+      "../../renderers/webgl/WebGLRenderer",
+      "./ParticleShader",
+      "./ParticleBuffer",
+      "../../math/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/textures/RenderTexture.js": [
+      "./BaseTexture",
+      "./Texture",
+      "../renderers/webgl/utils/RenderTarget",
+      "../renderers/webgl/managers/FilterManager",
+      "../renderers/canvas/utils/CanvasBuffer",
+      "../math/index",
+      "../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/textures/TextureUvs.js": [
+      "../math/GroupD8"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/canvas/CanvasRenderer.js": [
+      "../SystemRenderer",
+      "./utils/CanvasMaskManager",
+      "../../utils/index",
+      "../../math/index",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/canvas/utils/CanvasGraphics.js": [
+      "../../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/WebGLRenderer.js": [
+      "../SystemRenderer",
+      "./managers/ShaderManager",
+      "./managers/MaskManager",
+      "./managers/StencilManager",
+      "./managers/FilterManager",
+      "./managers/BlendModeManager",
+      "./utils/RenderTarget",
+      "./utils/ObjectRenderer",
+      "./filters/FXAAFilter",
+      "../../utils/index",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/shaders/Shader.js": [
+      "../../../utils/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/managers/ShaderManager.js": [
+      "./WebGLManager",
+      "../shaders/TextureShader",
+      "../shaders/ComplexPrimitiveShader",
+      "../shaders/PrimitiveShader",
+      "../../../utils/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/shaders/TextureShader.js": [
+      "./Shader"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/shaders/ComplexPrimitiveShader.js": [
+      "./Shader"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/shaders/PrimitiveShader.js": [
+      "./Shader"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/utils/RenderTarget.js": [
+      "../../../math/index",
+      "../../../utils/index",
+      "../../../const",
+      "./StencilMaskStack"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/utils/ObjectRenderer.js": [
+      "../managers/WebGLManager"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/filters/AbstractFilter.js": [
+      "../shaders/TextureShader"
+    ],
+    "npm:pixi.js@3.0.10/src/polyfill/Object.assign.js": [
+      "object-assign"
+    ],
+    "npm:pixi.js@3.0.10/src/core/textures/BaseTexture.js": [
+      "../utils/index",
+      "../const",
+      "eventemitter3"
+    ],
+    "npm:pixi.js@3.0.10/src/core/textures/Texture.js": [
+      "./BaseTexture",
+      "./VideoBaseTexture",
+      "./TextureUvs",
+      "eventemitter3",
+      "../math/index",
+      "../utils/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/utils/index.js": [
+      "../const",
+      "eventemitter3",
+      "./pluginTarget",
+      "async"
+    ],
+    "npm:pixi.js@3.0.10/src/core/display/DisplayObject.js": [
+      "../math/index",
+      "../textures/RenderTexture",
+      "eventemitter3",
+      "../const",
+      "process"
+    ],
+    "npm:pixi.js@3.0.10/src/core/graphics/webgl/GraphicsRenderer.js": [
+      "../../utils/index",
+      "../../math/index",
+      "../../const",
+      "../../renderers/webgl/utils/ObjectRenderer",
+      "../../renderers/webgl/WebGLRenderer",
+      "./WebGLGraphicsData",
+      "earcut"
+    ],
+    "npm:pixi.js@3.0.10/src/core/textures/VideoBaseTexture.js": [
+      "./BaseTexture",
+      "../utils/index",
+      "process"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/bloom/BloomFilter.js": [
+      "../../core/index",
+      "../blur/BlurXFilter",
+      "../blur/BlurYFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/blur/BlurFilter.js": [
+      "../../core/index",
+      "./BlurXFilter",
+      "./BlurYFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/filters/FXAAFilter.js": [
+      "./AbstractFilter",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/ascii/AsciiFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/filters/SpriteMaskFilter.js": [
+      "./AbstractFilter",
+      "../../../math/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/blur/BlurXFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/blur/BlurYFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/blur/BlurDirFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/color/ColorStepFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/color/ColorMatrixFilter.js": [
+      "../../core/index",
+      "fs",
+      "process"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/dropshadow/DropShadowFilter.js": [
+      "../../core/index",
+      "../blur/BlurXFilter",
+      "./BlurYTintFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/tiltshift/TiltShiftFilter.js": [
+      "../../core/index",
+      "./TiltShiftXFilter",
+      "./TiltShiftYFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/tiltshift/TiltShiftYFilter.js": [
+      "./TiltShiftAxisFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/tiltshift/TiltShiftXFilter.js": [
+      "./TiltShiftAxisFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/cacheAsBitmap.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/getGlobalPosition.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/getChildByName.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/MovieClip.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/TilingSprite.js": [
+      "../core/index",
+      "../core/renderers/canvas/utils/CanvasTinter"
+    ],
+    "npm:pixi.js@3.0.10/src/extras/BitmapText.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/interaction/InteractionData.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/interaction/InteractionManager.js": [
+      "../core/index",
+      "./InteractionData",
+      "./interactiveTarget"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/Plane.js": [
+      "./Mesh"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/Mesh.js": [
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/Rope.js": [
+      "./Mesh",
+      "../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/webgl/MeshShader.js": [
+      "../../core/index"
+    ],
+    "npm:pixi.js@3.0.10/src/mesh/webgl/MeshRenderer.js": [
+      "../../core/index",
+      "../Mesh"
+    ],
+    "npm:pixi.js@3.0.10/src/accessibility/AccessibilityManager.js": [
+      "../core/index",
+      "./accessibleTarget"
+    ],
+    "npm:pixi.js@3.0.10/src/loaders/textureParser.js": [
+      "../core/index"
+    ],
+    "npm:resource-loader@1.6.4.js": [
+      "npm:resource-loader@1.6.4/src/index.js"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/convolution/ConvolutionFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/crosshatch/CrossHatchFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/displacement/DisplacementFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/gray/GrayFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/invert/InvertFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/noise/NoiseFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/pixelate/PixelateFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/rgb/RGBSplitFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/dot/DotScreenFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/shockwave/ShockwaveFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/sepia/SepiaFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/blur/SmartBlurFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/twist/TwistFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/loaders/loader.js": [
+      "resource-loader",
+      "./textureParser",
+      "./spritesheetParser",
+      "./bitmapFontParser"
+    ],
+    "npm:pixi.js@3.0.10/src/loaders/bitmapFontParser.js": [
+      "resource-loader",
+      "../core/index",
+      "../extras/index",
+      "path"
+    ],
+    "npm:pixi.js@3.0.10/src/loaders/spritesheetParser.js": [
+      "resource-loader",
+      "path",
+      "../core/index"
+    ],
+    "npm:object-assign@4.0.1.js": [
+      "npm:object-assign@4.0.1/index"
+    ],
+    "npm:eventemitter3@1.2.0.js": [
+      "npm:eventemitter3@1.2.0/index.js"
+    ],
+    "npm:core-js@1.2.6/library/modules/$.export.js": [
+      "./$.global",
+      "./$.core",
+      "./$.ctx"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/Matrix.js": [
+      "./Point"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/GroupD8.js": [
+      "./Matrix"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/shapes/Circle.js": [
+      "./Rectangle",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/shapes/Ellipse.js": [
+      "./Rectangle",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/shapes/Polygon.js": [
+      "../Point",
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/shapes/Rectangle.js": [
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/math/shapes/RoundedRectangle.js": [
+      "../../const"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/canvas/utils/CanvasTinter.js": [
+      "../../../utils/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/particles/webgl/ParticleShader.js": [
+      "../../renderers/webgl/shaders/TextureShader"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/managers/FilterManager.js": [
+      "./WebGLManager",
+      "../utils/RenderTarget",
+      "../../../const",
+      "../utils/Quad",
+      "../../../math/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/canvas/utils/CanvasMaskManager.js": [
+      "./CanvasGraphics"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/managers/MaskManager.js": [
+      "./WebGLManager",
+      "../filters/SpriteMaskFilter"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/managers/StencilManager.js": [
+      "./WebGLManager",
+      "../../../utils/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/webgl/managers/BlendModeManager.js": [
+      "./WebGLManager"
+    ],
+    "github:jspm/nodelibs-process@0.1.2.js": [
+      "github:jspm/nodelibs-process@0.1.2/index"
+    ],
+    "npm:pixi.js@3.0.10/src/core/ticker/Ticker.js": [
+      "../const",
+      "eventemitter3"
+    ],
+    "npm:pixi.js@3.0.10/src/core/renderers/SystemRenderer.js": [
+      "../utils/index",
+      "../math/index",
+      "../const",
+      "eventemitter3"
+    ],
+    "npm:earcut@2.1.1.js": [
+      "npm:earcut@2.1.1/src/earcut.js"
+    ],
+    "npm:async@1.5.2.js": [
+      "npm:async@1.5.2/lib/async.js"
+    ],
+    "github:jspm/nodelibs-fs@0.1.2.js": [
+      "github:jspm/nodelibs-fs@0.1.2/index"
+    ],
+    "npm:resource-loader@1.6.4/src/index.js": [
+      "./Loader",
+      "./Resource",
+      "./middlewares/caching/memory",
+      "./middlewares/parsing/blob"
+    ],
+    "github:jspm/nodelibs-path@0.1.0.js": [
+      "github:jspm/nodelibs-path@0.1.0/index"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/dropshadow/BlurYTintFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:pixi.js@3.0.10/src/filters/tiltshift/TiltShiftAxisFilter.js": [
+      "../../core/index",
+      "fs"
+    ],
+    "npm:core-js@1.2.6/library/modules/$.ctx.js": [
+      "./$.a-function"
+    ],
+    "github:jspm/nodelibs-process@0.1.2/index.js": [
+      "process"
+    ],
+    "npm:earcut@2.1.1/src/earcut.js": [
+      "process"
+    ],
+    "npm:async@1.5.2/lib/async.js": [
+      "process"
+    ],
+    "npm:resource-loader@1.6.4/src/middlewares/parsing/blob.js": [
+      "../../Resource",
+      "../../b64"
+    ],
+    "npm:resource-loader@1.6.4/src/Loader.js": [
+      "async",
+      "url",
+      "./Resource",
+      "eventemitter3",
+      "process"
+    ],
+    "github:jspm/nodelibs-path@0.1.0/index.js": [
+      "path-browserify"
+    ],
+    "npm:resource-loader@1.6.4/src/Resource.js": [
+      "eventemitter3",
+      "url"
+    ],
+    "npm:process@0.11.2.js": [
+      "npm:process@0.11.2/browser.js"
+    ],
+    "npm:async@0.9.2.js": [
+      "npm:async@0.9.2/lib/async.js"
+    ],
+    "github:jspm/nodelibs-url@0.1.0.js": [
+      "github:jspm/nodelibs-url@0.1.0/index"
+    ],
+    "npm:path-browserify@0.0.0.js": [
+      "npm:path-browserify@0.0.0/index.js"
+    ],
+    "github:jspm/nodelibs-url@0.1.0/index.js": [
+      "url"
+    ],
+    "npm:async@0.9.2/lib/async.js": [
+      "process"
+    ],
+    "npm:path-browserify@0.0.0/index.js": [
+      "process"
+    ],
+    "npm:url@0.10.3.js": [
+      "npm:url@0.10.3/url.js"
+    ],
+    "npm:url@0.10.3/url.js": [
+      "punycode",
+      "querystring"
+    ],
+    "npm:punycode@1.3.2.js": [
+      "npm:punycode@1.3.2/punycode.js"
+    ],
+    "npm:querystring@0.2.0.js": [
+      "npm:querystring@0.2.0/index"
+    ],
+    "npm:punycode@1.3.2/punycode.js": [
+      "process"
+    ],
+    "npm:querystring@0.2.0/index.js": [
+      "./decode",
+      "./encode"
+    ]
+  },
+
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
-    "bootstrap-sass": "github:twbs/bootstrap-sass@3.3.6",
-    "box2d": "npm:box2d@1.0.0",
     "clean-css": "npm:clean-css@3.4.11",
     "core-js": "npm:core-js@1.2.6",
     "css": "npm:jspm-loader-css@1.1.0",
     "fetch": "npm:whatwg-fetch@0.11.0",
-    "firebase": "github:firebase/firebase-bower@2.4.2",
     "image": "github:systemjs/plugin-image@0.1.0",
-    "instafeed.js": "npm:instafeed.js@1.4.1",
     "json": "github:systemjs/plugin-json@0.1.0",
     "jspm-loader-css": "npm:jspm-loader-css@1.1.0",
     "p5": "github:processing/p5.js@0.4.23",
+    "pixi.js": "npm:pixi.js@3.0.10",
     "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
-    "processing/p5.js": "github:processing/p5.js@0.4.23",
-    "react": "npm:react@0.14.8",
-    "react-dom": "npm:react-dom@0.14.8",
-    "react-retina-image": "npm:react-retina-image@2.0.0",
     "scss": "github:mobilexag/plugin-sass@0.4.0",
     "whatwg-fetch": "npm:whatwg-fetch@0.11.0",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -74,6 +736,12 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2": {
       "process": "npm:process@0.11.2"
     },
+    "github:jspm/nodelibs-punycode@0.1.0": {
+      "punycode": "npm:punycode@1.3.2"
+    },
+    "github:jspm/nodelibs-querystring@0.1.0": {
+      "querystring": "npm:querystring@0.2.0"
+    },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
     },
@@ -92,12 +760,18 @@ System.config({
     "github:mobilexag/plugin-sass@0.4.0": {
       "autoprefixer": "npm:autoprefixer@6.3.6",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "lodash": "npm:lodash@4.7.0",
+      "lodash": "npm:lodash@4.8.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "postcss": "npm:postcss@5.0.19",
       "reqwest": "github:ded/reqwest@2.0.5",
       "sass.js": "npm:sass.js@0.9.7",
       "url": "github:jspm/nodelibs-url@0.1.0"
+    },
+    "npm:acorn@1.2.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -117,6 +791,13 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
+    "npm:async@0.9.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:async@1.5.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:autoprefixer@6.3.6": {
       "browserslist": "npm:browserslist@1.3.1",
       "caniuse-db": "npm:caniuse-db@1.0.30000446",
@@ -133,8 +814,16 @@ System.config({
     "npm:bn.js@4.11.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:box2d@1.0.0": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    "npm:brfs@1.4.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "quote-stream": "npm:quote-stream@1.0.2",
+      "resolve": "npm:resolve@1.1.7",
+      "static-module": "npm:static-module@1.3.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "through2": "npm:through2@2.0.1"
     },
     "npm:browserify-aes@1.0.6": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -180,12 +869,20 @@ System.config({
       "parse-asn1": "npm:parse-asn1@5.0.0",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
+    "npm:browserify-versionify@1.0.6": {
+      "find-root": "npm:find-root@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "through2": "npm:through2@0.6.3"
+    },
     "npm:browserslist@1.3.1": {
       "caniuse-db": "npm:caniuse-db@1.0.30000446",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:buffer-equal@0.0.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:buffer-xor@1.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -225,6 +922,12 @@ System.config({
       "graceful-readlink": "npm:graceful-readlink@1.0.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:concat-stream@1.4.10": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "inherits": "npm:inherits@2.0.1",
+      "readable-stream": "npm:readable-stream@1.1.13",
+      "typedarray": "npm:typedarray@0.0.6"
     },
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -302,6 +1005,12 @@ System.config({
       "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:duplexer2@0.0.2": {
+      "readable-stream": "npm:readable-stream@1.1.13"
+    },
+    "npm:earcut@2.1.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:elliptic@6.2.3": {
       "bn.js": "npm:bn.js@4.11.1",
       "brorand": "npm:brorand@1.0.5",
@@ -309,22 +1018,60 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:escodegen@0.0.28": {
+      "esprima": "npm:esprima@1.0.4",
+      "estraverse": "npm:estraverse@1.3.2",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "source-map": "npm:source-map@0.1.43",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:escodegen@1.3.3": {
+      "esprima": "npm:esprima@1.1.1",
+      "estraverse": "npm:estraverse@1.5.1",
+      "esutils": "npm:esutils@1.0.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "source-map": "npm:source-map@0.1.43",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:esprima@1.0.4": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:esprima@1.1.1": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:evp_bytestokey@1.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
     },
+    "npm:falafel@1.2.0": {
+      "acorn": "npm:acorn@1.2.2",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "foreach": "npm:foreach@2.0.5",
+      "isarray": "npm:isarray@0.0.1",
+      "object-keys": "npm:object-keys@1.0.9"
+    },
     "npm:fastparse@1.1.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:fbjs@0.6.1": {
-      "process": "github:jspm/nodelibs-process@0.1.2"
+    "npm:find-root@0.1.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "npm:graceful-readlink@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:has-flag@1.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:has@1.0.1": {
+      "function-bind": "npm:function-bind@1.1.0"
     },
     "npm:hash.js@1.0.3": {
       "inherits": "npm:inherits@2.0.1"
@@ -344,7 +1091,7 @@ System.config({
       "path": "npm:path@0.12.7",
       "toposort": "npm:toposort@0.2.12"
     },
-    "npm:lodash@4.7.0": {
+    "npm:lodash@4.8.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -379,6 +1126,21 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:pixi.js@3.0.10": {
+      "async": "npm:async@1.5.2",
+      "brfs": "npm:brfs@1.4.3",
+      "browserify-versionify": "npm:browserify-versionify@1.0.6",
+      "earcut": "npm:earcut@2.1.1",
+      "eventemitter3": "npm:eventemitter3@1.2.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "object-assign": "npm:object-assign@4.0.1",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "punycode": "github:jspm/nodelibs-punycode@0.1.0",
+      "querystring": "github:jspm/nodelibs-querystring@0.1.0",
+      "resource-loader": "npm:resource-loader@1.6.4",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:postcss-modules-extract-imports@1.0.0": {
       "postcss": "npm:postcss@5.0.10",
@@ -417,6 +1179,9 @@ System.config({
       "source-map": "npm:source-map@0.5.3",
       "supports-color": "npm:supports-color@3.1.2"
     },
+    "npm:process-nextick-args@1.0.6": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
@@ -432,26 +1197,35 @@ System.config({
     "npm:punycode@1.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:quote-stream@0.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "minimist": "npm:minimist@0.0.8",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "through2": "npm:through2@0.4.2"
+    },
+    "npm:quote-stream@1.0.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "buffer-equal": "npm:buffer-equal@0.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "minimist": "npm:minimist@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "through2": "npm:through2@2.0.1"
+    },
     "npm:randombytes@2.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:react-dom@0.14.8": {
-      "react": "npm:react@0.14.8"
-    },
-    "npm:react-retina-image@2.0.0": {
-      "array-equal": "npm:array-equal@1.0.0",
-      "image-exists": "npm:image-exists@1.1.0",
-      "is-retina": "npm:is-retina@1.0.3",
+    "npm:readable-stream@1.0.33": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "core-util-is": "npm:core-util-is@1.0.2",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "inherits": "npm:inherits@2.0.1",
       "isarray": "npm:isarray@0.0.1",
-      "object-assign": "npm:object-assign@4.0.1",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
-    "npm:react@0.14.8": {
-      "fbjs": "npm:fbjs@0.6.1",
-      "process": "github:jspm/nodelibs-process@0.1.2"
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream-browserify": "npm:stream-browserify@1.0.0",
+      "string_decoder": "npm:string_decoder@0.10.31"
     },
     "npm:readable-stream@1.1.13": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -462,6 +1236,31 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "npm:readable-stream@2.0.6": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "core-util-is": "npm:core-util-is@1.0.2",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "inherits": "npm:inherits@2.0.1",
+      "isarray": "npm:isarray@1.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "process-nextick-args": "npm:process-nextick-args@1.0.6",
+      "string_decoder": "npm:string_decoder@0.10.31",
+      "util-deprecate": "npm:util-deprecate@1.0.2"
+    },
+    "npm:resolve@1.1.7": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:resource-loader@1.6.4": {
+      "async": "npm:async@0.9.2",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "eventemitter3": "npm:eventemitter3@1.2.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:ripemd160@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -480,12 +1279,36 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:source-map@0.1.43": {
+      "amdefine": "npm:amdefine@1.0.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:source-map@0.4.4": {
       "amdefine": "npm:amdefine@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:source-map@0.5.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:static-eval@0.2.4": {
+      "escodegen": "npm:escodegen@0.0.28"
+    },
+    "npm:static-module@1.3.1": {
+      "concat-stream": "npm:concat-stream@1.4.10",
+      "duplexer2": "npm:duplexer2@0.0.2",
+      "escodegen": "npm:escodegen@1.3.3",
+      "falafel": "npm:falafel@1.2.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "has": "npm:has@1.0.1",
+      "object-inspect": "npm:object-inspect@0.4.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "quote-stream": "npm:quote-stream@0.0.0",
+      "readable-stream": "npm:readable-stream@1.0.33",
+      "shallow-copy": "npm:shallow-copy@0.0.1",
+      "static-eval": "npm:static-eval@0.2.4",
+      "through2": "npm:through2@0.4.2"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
@@ -499,6 +1322,23 @@ System.config({
       "has-flag": "npm:has-flag@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:through2@0.4.2": {
+      "readable-stream": "npm:readable-stream@1.0.33",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "xtend": "npm:xtend@2.1.2"
+    },
+    "npm:through2@0.6.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "readable-stream": "npm:readable-stream@1.0.33",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "xtend": "npm:xtend@4.0.1"
+    },
+    "npm:through2@2.0.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "readable-stream": "npm:readable-stream@2.0.6",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "xtend": "npm:xtend@4.0.1"
+    },
     "npm:toposort@0.2.12": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -509,12 +1349,18 @@ System.config({
       "querystring": "npm:querystring@0.2.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:util-deprecate@1.0.2": {
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:xtend@2.1.2": {
+      "object-keys": "npm:object-keys@0.4.0"
     }
   }
 });

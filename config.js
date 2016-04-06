@@ -26,6 +26,7 @@ System.config({
     "fabric": "npm:fabric@1.6.0-rc.1",
     "fetch": "npm:whatwg-fetch@0.11.0",
     "image": "github:systemjs/plugin-image@0.1.0",
+    "jquery": "npm:jquery@2.2.3",
     "json": "github:systemjs/plugin-json@0.1.0",
     "jspm-loader-css": "npm:jspm-loader-css@1.1.0",
     "p5": "github:processing/p5.js@0.4.23",
@@ -33,7 +34,6 @@ System.config({
     "pixi.js": "npm:pixi.js@3.0.10",
     "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
     "scss": "github:mobilexag/plugin-sass@0.4.0",
-    "tween.js": "npm:tween.js@16.3.4",
     "whatwg-fetch": "npm:whatwg-fetch@0.11.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"

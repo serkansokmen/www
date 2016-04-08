@@ -692,11 +692,14 @@ System.config({
     "clean-css": "npm:clean-css@3.4.11",
     "core-js": "npm:core-js@1.2.6",
     "css": "npm:jspm-loader-css@1.1.0",
+    "fabric": "npm:fabric@1.6.0-rc.1",
     "fetch": "npm:whatwg-fetch@0.11.0",
     "image": "github:systemjs/plugin-image@0.1.0",
+    "jquery": "npm:jquery@2.2.3",
     "json": "github:systemjs/plugin-json@0.1.0",
     "jspm-loader-css": "npm:jspm-loader-css@1.1.0",
     "p5": "github:processing/p5.js@0.4.23",
+    "p5.js": "github:processing/p5.js@0.4.23",
     "pixi.js": "npm:pixi.js@3.0.10",
     "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
     "scss": "github:mobilexag/plugin-sass@0.4.0",
@@ -1049,6 +1052,14 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
+    },
+    "npm:fabric@1.6.0-rc.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:falafel@1.2.0": {
       "acorn": "npm:acorn@1.2.2",

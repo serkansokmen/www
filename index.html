@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Serkan Sokmen </title>
+    <title>Serkan Sokmen</title>
     <meta name="application-name" content="serkansokmen.com" />
     <meta name="author" content="Serkan Sokmen" />
     <meta name="distributor" content="" />
@@ -26,15 +26,33 @@
     <meta property="twitter:title" content="Serkan Sokmen" />
     <meta property="twitter:description" content="Personal website" />
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="app/reset.css">
+    <link rel="stylesheet" href="app/main.css">
   </head>
-  <body>
-    <div>
-        <div id="canvas-container"/>
+  <body class="loading">
+    <div id="canvas-container">
+        <nav class="hidden">
+            <ul>
+                <li><a href="https://github.com/serkansokmen" target="_blank" alt="github">Github</a></li>
+                <li><a href="https://vimeo.com/serkansokmen" target="_blank" alt="vimeo">Vimeo</a></li>
+                <li><a href="https://behance.net/serkansokmen" target="_blank" alt="behance">Behance</a></li>
+                <li><a href="https://instagram.com/serkansokmen" target="_blank" alt="instagram">Instagram</a></li>
+                <li><a href="https://soundcloud.com/serkansokmen" target="_blank" alt="soundcloud">Soundcloud</a></li>
+                <li><a href="https://facebook.com/serkan.sokmen" target="_blank" alt="facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/serkansokmen" target="_blank" alt="twitter">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/serkansokmen" target="_blank" alt="linkedin">Linkedin</a></li>
+                <li><a href="https://zepzero.deviantart.com" target="_blank" alt="deviantart">Deviantart</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="info-container">
         <div class="info">
-            <img class="img-rounded" src="images/avatar-2x.png"  alt="Serkan Sokmen" width="100" height="100"/>
-            <h1>bana, benimle ilgili</h1>
-            <p style="white-space: pre-wrap">“Bişey der, aslında bikaç şey ima…” - dedi bi hoca.
+            <div class="box">
+                <img class="img-avatar" src="images/avatar-2x.png"  alt="Serkan Sokmen" width="100" height="100"/>
+            </div>
+            <div class="box">
+                <h1 class="title">bana, benimle ilgili</h1>
+                <p class="description">“Bişey der, aslında bikaç şey ima…” - dedi bi hoca.
 “Düşüncesi kendinden bi adım...” - dedi diğeri, kafalar.
 “Zırvalıyo paso, aslında hiçbişey demiyo, sadece `şey` diyo” - diyo sadosan
 “Cümle bitiremez, anlat artık!” - der ezitorik.
@@ -47,21 +65,18 @@ günah keçisiyim amk.
 şablon görmekten imanım gevredi.
 filan felan.
 </p>
-        <nav class="hidden">
-            <ul>
-                <li><a href="https://github.com/serkansokmen" target="_blank" alt="github"></a></li>
-                <li><a href="https://vimeo.com/serkansokmen" target="_blank" alt="vimeo"></a></li>
-                <li><a href="https://behance.net/serkansokmen" target="_blank" alt="behance"></a></li>
-                <li><a href="https://instagram.com/serkansokmen" target="_blank" alt="instagram"></a></li>
-                <li><a href="https://soundcloud.com/serkansokmen" target="_blank" alt="soundcloud"></a></li>
-                <li><a href="https://facebook.com/serkan.sokmen" target="_blank" alt="facebook"></a></li>
-                <li><a href="https://twitter.com/serkansokmen" target="_blank" alt="twitter"></a></li>
-                <li><a href="https://www.linkedin.com/in/serkansokmen" target="_blank" alt="linkedin"></a></li>
-                <li><a href="https://zepzero.deviantart.com" target="_blank" alt="deviantart"></a></li>
-            </ul>
-        </nav>
-        </div>
+            </div>
     </div>
-    <script src="bundle.js"></script>
-  </body>
+
+</div>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+System.trace = true
+System.sourceMaps = true
+System.import('rAF')
+System.import('app/main')
+</script>
+<!-- <script src="bundle.js"></script> -->
+</body>
 </html>

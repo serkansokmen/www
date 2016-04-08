@@ -49,9 +49,7 @@ class Main {
     this.container = new ParticleContainer()
     this.stage.addChild(this.container)
 
-    const x = this.particleStage.width / 2
-    const y = this.particleStage.height / 2
-    const pos = new Vector(x, y)
+    const pos = this.getAvatarPosition()
     for (let key of Object.keys(resources)) {
       this.container.addParticle(resources[key].texture, appData.links[key].url, pos)
     }
@@ -59,12 +57,18 @@ class Main {
     this.render()
   }
 
+  getAvatarPosition() {
+    const x = $('.img-avatar').offset().left + $('.img-avatar').width()/2
+    const y = $('.img-avatar').offset().top + $('.img-avatar').height()/2
+    return new Vector(x, y)
+  }
+
   render() {
     this.renderer.render(this.stage)
     this.animate()
   }
   animate() {
-    this.container.update(this.particleStage)
+    this.container.update(this.particleStage, this.getAvatarPosition())
     this.renderer.render(this.stage)
     window.requestAnimationFrame(this.animate.bind(this))
   }
@@ -75,9 +79,4 @@ Main.prototype.h = window.innerHeight
 $(() => {
   const main = new Main()
   main.setup(appData)
-  $(window).resize(() => {
-    main.stage.width = window.innerWidth
-    main.stage.height = window.innerHeight
-  })
-
 })

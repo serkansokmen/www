@@ -9,28 +9,26 @@ export default class Particle extends PIXI.Sprite {
     super(texture, ...arg)
 
     this.position = new Vector(position.x, position.y)
+
     // this.position.set(position.x, position.y)
     this.velocity = new Vector(-1 + Math.random() * 2, -1 + Math.random() * 2)
-    this.accel = new Vector(Math.random() * 0.001, Math.random() * 0.001)
+    this.velocity.multiplyScalar(0.5)
+    this.accel = new Vector(Math.random() * 0.0001, Math.random() * 0.0001)
 
     this.anchor.x = 0.5
     this.anchor.y = 0.5
+
+    this.mass = 100.0
   }
 
   render(stage) {
 
     this.velocity.add(this.accel)
     this.position.add(this.velocity)
+    // this.accel.multiplyScalar(0)
 
     const x = this.position.x
     const y = this.position.y
-
-    if ((x <= stage.padding * 2) || (x >= stage.width - stage.padding * 2)) {
-      this.velocity.set(-1 * this.velocity.x, this.velocity.y)
-    }
-    if ((y <= stage.padding * 2) || (y >= stage.height - stage.padding * 2)) {
-      this.velocity.set(this.velocity.x, -1 * this.velocity.y)
-    }
   }
 
   setUrl(url) {
@@ -41,7 +39,7 @@ export default class Particle extends PIXI.Sprite {
   }
 
   applyForce(force) {
-    f.div(this.mass);
-    this.acceleration.add(f);
+    // let f = force.clone().divideScalar(this.mass).normalize()
+    // this.accel.add(f)
   }
 }

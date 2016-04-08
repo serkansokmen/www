@@ -30,16 +30,28 @@ body.loading {
   background-color: #000000;
   // color: white;
 }
-canvas {
+#canvas-container canvas {
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 .info {
-  position: absolute;
-  bottom: 4.8rem;
-  right: 4.8rem;
-  padding: 1.2rem;
-  width: auto;
+  pointer-events: none;
+  padding: 12px;
+  margin-top: 20%;
+  margin-right: 20px;
+  // margin-bottom: 60px;
+  width: 680px;
   background: rgba(255,255,255,.25);
   // border: 1px solid rgba(0,0,0,0.1);
   border-radius: 0;
@@ -93,9 +105,6 @@ body.loading .info {
 
 @media (max-width: 700px) {
   .info {
-    left: 10px;
-    top: 20px;
-    right: 10px;
-    bottom: auto;
+    width: 80%;
   }
 }

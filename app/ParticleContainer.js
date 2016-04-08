@@ -21,9 +21,12 @@ export default class ParticleContainer extends PIXI.Sprite {
     this.addChild(particle)
   }
 
-  update(stage) {
+  update(stage, origin) {
     for (let p of this.particles) {
-      p.render(stage, 120)
+      if (origin.distanceTo(p.position) > Math.min(stage.width, stage.height) / 4) {
+        p.velocity.multiplyScalar(-1)
+      }
+      p.render(stage)
     }
 
     // Render lines
@@ -35,13 +38,8 @@ export default class ParticleContainer extends PIXI.Sprite {
         const py = prev.position.y + prev.anchor.y
 
         for (let other of this.particles) {
-    //       if (particle === other) {
-    //         return
-    //       }
           const dist = other.position.distanceTo(prev.position)
-          // console.log(dist)
           this.linesGraphics.lineStyle(0.5, 0x444444, 1.5 - dist/250.0)
-          // console.log(dist/100.0);
           if (dist > 0.1) {
             const ox = other.position.x + other.anchor.x
             const oy = other.position.y + other.anchor.y

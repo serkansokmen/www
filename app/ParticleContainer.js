@@ -32,7 +32,7 @@ export default class ParticleContainer extends PIXI.Sprite {
 
   render() {
     this.linesGraphics.clear()
-    this.linesGraphics.lineStyle(1, 0xcccccc, 1.0)
+    this.linesGraphics.lineStyle(1, 0x000000)
 
     // Render lines
     let prev = null
@@ -42,8 +42,8 @@ export default class ParticleContainer extends PIXI.Sprite {
     //       if (particle === otherParticle) {
     //         return
     //       }
-          this.linesGraphics.moveTo(prev.x, prev.y)
-          this.linesGraphics.lineTo(other.x, other.y)
+          this.linesGraphics.moveTo(prev.position.x, prev.position.y)
+          this.linesGraphics.lineTo(other.position.x, other.position.y)
           this.linesGraphics.endFill()
         }
       }

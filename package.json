@@ -32,6 +32,7 @@
       "pixi.js": "npm:pixi.js@^3.0.10",
       "postcss-simple-vars": "npm:postcss-simple-vars@^1.2.0",
       "scss": "github:mobilexag/plugin-sass@^0.4.0",
+      "toxiclibsjs": "npm:toxiclibsjs@^0.3.1",
       "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
     },
     "devDependencies": {

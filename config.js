@@ -34,6 +34,7 @@ System.config({
     "pixi.js": "npm:pixi.js@3.0.10",
     "postcss-simple-vars": "npm:postcss-simple-vars@1.2.0",
     "scss": "github:mobilexag/plugin-sass@0.4.0",
+    "toxiclibsjs": "npm:toxiclibsjs@0.3.1",
     "whatwg-fetch": "npm:whatwg-fetch@0.11.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -683,6 +684,10 @@ System.config({
     },
     "npm:toposort@0.2.12": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:toxiclibsjs@0.3.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:url@0.10.3": {

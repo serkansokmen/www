@@ -43,7 +43,7 @@ class Main {
       y: 0,
       width: window.innerWidth,
       height: window.innerHeight,
-      padding: 200
+      padding: 100
     }
 
     this.container = new ParticleContainer()

@@ -23,14 +23,14 @@ export default class Particle extends PIXI.Sprite {
     this.y = this.position.y
 
     if (this.x <= stage.padding * 2) {
-      this.velocity.x *= 1
+      this.velocity.set(-1 * this.velocity.x, this.velocity.y)
     } else if (this.x >= stage.width - stage.padding * 2) {
-      this.velocity.x *= -1
+      this.velocity.set(-1 * this.velocity.x, this.velocity.y)
     }
     if (this.y <= stage.padding * 2) {
-      this.velocity.y *= 1
+      this.velocity.set(this.velocity.x, -1 * this.velocity.y)
     } else if (this.y >= stage.height - stage.padding * 2) {
-      this.velocity.y *= -1
+      this.velocity.set(this.velocity.x, -1 * this.velocity.y)
     }
   }
 

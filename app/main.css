@@ -94,6 +94,11 @@ body.loading .info {
 .info .box {
   margin-right: 16px;
 }
+.info .box.box-sm {
+  -webkit-flex-basis: 100px;
+      -ms-flex-preferred-size: 100px;
+          flex-basis: 100px;
+}
 .info .box h1.title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -105,6 +110,7 @@ body.loading .info {
 }
 .info .box .img-avatar {
   border-radius: 50%;
+  min-width: 100px;
 }
 
 .hidden {

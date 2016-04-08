@@ -9,17 +9,14 @@ export default class ParticleContainer extends PIXI.Sprite {
   constructor(...arg) {
     super(...arg)
 
-    this.particles = []
-
+    this.particles = new Array()
     this.linesGraphics = new PIXI.Graphics()
     this.addChild(this.linesGraphics)
   }
 
-  addParticle(texture, position) {
+  addParticle(texture, url, position) {
     let particle = new Particle(texture, position)
-
-    // particle.setUrl(link_url)
-
+    particle.setUrl(url)
     this.particles.push(particle)
     this.addChild(particle)
   }

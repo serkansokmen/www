@@ -53,7 +53,7 @@ class Main {
     const y = this.particleStage.height / 2
     const pos = new Vector(x, y)
     for (let key of Object.keys(resources)) {
-      this.container.addParticle(resources[key].texture, pos)
+      this.container.addParticle(resources[key].texture, appData.links[key].url, pos)
     }
 
     this.render()

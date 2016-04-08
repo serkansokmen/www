@@ -41,7 +41,7 @@ canvas {
   padding: 1.2rem;
   width: auto;
   background: rgba(255,255,255,.25);
-  border: 1px solid rgba(0,0,0,0.1);
+  // border: 1px solid rgba(0,0,0,0.1);
   border-radius: 0;
   font-size: 1.0rem;
   font-weight: 400;

@@ -60,7 +60,6 @@ class Main {
   }
 
   render() {
-    this.container.render()
     this.renderer.render(this.stage)
     this.animate()
   }

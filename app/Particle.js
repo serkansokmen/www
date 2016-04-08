@@ -12,24 +12,23 @@ export default class Particle extends PIXI.Sprite {
     // this.position.set(position.x, position.y)
     this.velocity = new Vector(-1 + Math.random() * 2, -1 + Math.random() * 2)
     this.accel = new Vector(Math.random() * 0.001, Math.random() * 0.001)
+
+    this.anchor.x = 0.5
+    this.anchor.y = 0.5
   }
 
   render(stage) {
 
-    this.velocity = this.velocity.add(this.accel)
-    this.position = this.position.add(this.velocity)
+    this.velocity.add(this.accel)
+    this.position.add(this.velocity)
 
-    this.x = this.position.x
-    this.y = this.position.y
+    const x = this.position.x
+    const y = this.position.y
 
-    if (this.x <= stage.padding * 2) {
-      this.velocity.set(-1 * this.velocity.x, this.velocity.y)
-    } else if (this.x >= stage.width - stage.padding * 2) {
+    if ((x <= stage.padding * 2) || (x >= stage.width - stage.padding * 2)) {
       this.velocity.set(-1 * this.velocity.x, this.velocity.y)
     }
-    if (this.y <= stage.padding * 2) {
-      this.velocity.set(this.velocity.x, -1 * this.velocity.y)
-    } else if (this.y >= stage.height - stage.padding * 2) {
+    if ((y <= stage.padding * 2) || (y >= stage.height - stage.padding * 2)) {
       this.velocity.set(this.velocity.x, -1 * this.velocity.y)
     }
   }

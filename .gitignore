@@ -4,7 +4,6 @@
 /dist
 /tmp
 
-cloak
 # dependencies
 /node_modules
 /bower_components
@@ -32,3 +31,5 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+/cloak

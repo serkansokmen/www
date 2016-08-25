@@ -1,3 +1,4 @@
 # www
 
-Personal website source code
+Repo for poersonal website
+

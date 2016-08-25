@@ -1,11 +1,17 @@
 {
-  "name": "serkansokmen.com",
-  "version": "1.0.0",
+  "name": "www",
+  "version": "1.1.0",
   "description": "personal website",
-  "main": "index.js",
+  "license": "MIT",
+  "angular-cli": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git@github.com:serkansokmen/serkansokmen.com"
@@ -16,29 +22,35 @@
   ],
   "author": "Serkan Sokmen <e.serkan.sokmen@gmail.com> (http://serkansokmen.com)",
   "license": "MIT",
-  "devDependencies": {
-    "systemjs": "0.19.25"
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "0.6.12"
   },
-  "jspm": {
-    "dependencies": {
-      "css": "npm:jspm-loader-css@^1.1.0",
-      "fabric": "npm:fabric@^1.6.0-rc.1",
-      "fetch": "npm:whatwg-fetch@^0.11.0",
-      "image": "github:systemjs/plugin-image@^0.1.0",
-      "jquery": "npm:jquery@^2.2.3",
-      "json": "github:systemjs/plugin-json@^0.1.0",
-      "p5": "github:processing/p5.js@^0.4.23",
-      "p5.js": "github:processing/p5.js@^0.4.23",
-      "pixi.js": "npm:pixi.js@^3.0.10",
-      "postcss-simple-vars": "npm:postcss-simple-vars@^1.2.0",
-      "scss": "github:mobilexag/plugin-sass@^0.4.0",
-      "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "clean-css": "npm:clean-css@^3.4.11",
-      "core-js": "npm:core-js@^1.1.4"
-    }
+  "devDependencies": {
+    "@types/jasmine": "^2.2.30",
+    "@types/protractor": "^1.5.16",
+    "angular-cli": "1.0.0-beta.11-webpack.2",
+    "codelyzer": "0.0.26",
+    "jasmine-core": "2.4.1",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "0.13.22",
+    "karma-chrome-launcher": "0.2.3",
+    "karma-jasmine": "0.3.8",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "3.3.0",
+    "ts-node": "1.2.1",
+    "tslint": "3.13.0",
+    "typescript": "^2.0.0"
   }
 }

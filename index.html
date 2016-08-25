@@ -26,11 +26,12 @@
     <meta property="twitter:title" content="Serkan Sokmen" />
     <meta property="twitter:description" content="Personal website" />
 
+    <link href="//fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/reset.css">
-    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div id="nodes"></div>
     <div class="info-container">
         <div class="info">
             <div class="box box-sm">
@@ -44,19 +45,26 @@ hepsi yakın
 hepsini yakın
 pepsileriyle
 yaşasın cola</p>
-            <nav class="social">
-                <a href="https://github.com/serkansokmen" target="_blank" alt="github"><img src="images/github-2x.png" alt="github"></a>
-                <a href="https://vimeo.com/serkansokmen" target="_blank" alt="vimeo"><img src="images/vimeo-2x.png" alt="vimeo"></a>
-                <a href="https://behance.net/serkansokmen" target="_blank" alt="behance"><img src="images/behance-2x.png" alt="behance"></a>
-                <a href="https://instagram.com/serkansokmen" target="_blank" alt="instagram"><img src="images/instagram-2x.png" alt="instagram"></a>
-                <a href="https://soundcloud.com/serkansokmen" target="_blank" alt="soundcloud"><img src="images/soundcloud-2x.png" alt="soundcloud"></a>
-                <a href="https://facebook.com/serkan.sokmen" target="_blank" alt="facebook"><img src="images/facebook-2x.png" alt="facebook"></a>
-                <a href="https://twitter.com/serkansokmen" target="_blank" alt="twitter"><img src="images/twitter-2x.png" alt="twitter"></a>
-                <a href="https://www.linkedin.com/in/serkansokmen" target="_blank" alt="linkedin"><img src="images/linkedin-2x.png" alt="linkedin"></a>
-                <a href="https://zepzero.deviantart.com" target="_blank" alt="deviantart"><img src="images/deviantart-2x.png" alt="deviantart"></a>
+            <nav id="social-links" class="social">
+                <a href="https://github.com/serkansokmen" target="_blank" title="github" data-group="1"><img src="images/github-2x.png" alt="github"></a>
+                <a href="https://vimeo.com/serkansokmen" target="_blank" title="vimeo" data-group="2"><img src="images/vimeo-2x.png" alt="vimeo"></a>
+                <a href="https://behance.net/serkansokmen" target="_blank" title="behance" data-group="2"><img src="images/behance-2x.png" alt="behance"></a>
+                <a href="https://instagram.com/serkansokmen" target="_blank" title="instagram" data-group="3"><img src="images/instagram-2x.png" alt="instagram"></a>
+                <a href="https://soundcloud.com/serkansokmen" target="_blank" title="soundcloud" data-group="4"><img src="images/soundcloud-2x.png" alt="soundcloud"></a>
+                <a href="https://facebook.com/serkan.sokmen" target="_blank" title="facebook" data-group="3"><img src="images/facebook-2x.png" alt="facebook"></a>
+                <a href="https://twitter.com/serkansokmen" target="_blank" title="twitter" data-group="3"><img src="images/twitter-2x.png" alt="twitter"></a>
+                <a href="https://www.linkedin.com/in/serkansokmen" target="_blank" title="linkedin" data-group="3"><img src="images/linkedin-2x.png" alt="linkedin"></a>
+                <a href="https://zepzero.deviantart.com" target="_blank" title="deviantart" data-group="2"><img src="images/deviantart-2x.png" alt="deviantart"></a>
             </nav>
         </div>
     </div>
 </div>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+System.trace = true
+System.sourceMaps = true
+System.import('app/main')
+</script>
 </body>
 </html>

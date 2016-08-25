@@ -22,11 +22,14 @@
   "jspm": {
     "dependencies": {
       "css": "npm:jspm-loader-css@^1.1.0",
+      "d3": "npm:d3@^3.5.16",
       "image": "github:systemjs/plugin-image@^0.1.0",
       "jquery": "npm:jquery@^2.2.3",
       "json": "github:systemjs/plugin-json@^0.1.0",
       "pixi.js": "npm:pixi.js@^3.0.10",
       "postcss-simple-vars": "npm:postcss-simple-vars@^1.2.0",
+      "react": "npm:react@^15.0.1",
+      "react-dom": "npm:react-dom@^15.0.1",
       "scss": "github:mobilexag/plugin-sass@^0.4.0",
       "toxiclibsjs": "npm:toxiclibsjs@^0.3.1"
     },

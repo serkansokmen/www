@@ -1,17 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ApplicationRef } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AvatarComponent } from './avatar/avatar.component';
+import { TitleComponent } from './title/title.component';
+import { DescriptionComponent } from './description/description.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AvatarComponent,
+    SocialLinksComponent,
+    DescriptionComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule,
-    FormsModule
+    CommonModule
   ],
   providers: [],
   entryComponents: [AppComponent],

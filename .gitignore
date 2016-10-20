@@ -10,6 +10,7 @@
 
 # IDEs and editors
 /.idea
+/.vscode
 .project
 .classpath
 *.launch
@@ -32,4 +33,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# Project Specific Files
 /cloak

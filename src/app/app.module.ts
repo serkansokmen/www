@@ -8,12 +8,14 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { TitleComponent } from './title/title.component';
 import { DescriptionComponent } from './description/description.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { SocialLinkNodeComponent } from './social-links/social-link-node.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AvatarComponent,
     SocialLinksComponent,
+    SocialLinkNodeComponent,
     DescriptionComponent,
     TitleComponent
   ],

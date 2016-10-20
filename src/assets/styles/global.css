@@ -30,7 +30,6 @@ p {
 body {
   background-color: #ffffff;
   color: black;
-  background-image: url(../images/background.png);
   background-size: cover;
   background-position: right bottom;
   -webkit-transition: background-color 1.2s ease;

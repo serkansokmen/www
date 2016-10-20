@@ -1,28 +1,16 @@
-import { Component, OnInit, ViewChild, ElementRef, Input, AfterViewInit } from '@angular/core';
-import { SocialLinksService } from './social-links.service';
+import { Component, Input } from '@angular/core';
 import { SocialLinkNodeComponent } from './social-link-node.component';
-
 
 @Component({
   selector: 'app-social-links',
   templateUrl: 'social-links.component.html',
   styleUrls: ['social-links.component.scss'],
-  providers: [SocialLinksService],
   directives: [SocialLinkNodeComponent]
 })
-export class SocialLinksComponent implements AfterViewInit {
+export class SocialLinksComponent {
 
-  engine;
-  world;
-  render;
-  socialLinks;
+  @Input() items;
 
-  constructor(private service: SocialLinksService) {
-    this.socialLinks = service.getSocialLinks();
-  }
-
-  ngAfterViewInit() {
-
-  }
+  constructor() {}
 
 }

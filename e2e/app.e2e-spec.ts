@@ -1,10 +1,10 @@
-import { WwwPage } from './app.po';
+import { SsPage } from './app.po';
 
-describe('www App', function() {
-  let page: WwwPage;
+describe('ss App', () => {
+  let page: SsPage;
 
   beforeEach(() => {
-    page = new WwwPage();
+    page = new SsPage();
   });
 
   it('should display message saying app works', () => {

@@ -10,6 +10,7 @@ import { DescriptionComponent } from './description/description.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { SocialLinkNodeComponent } from './social-links/social-link-node.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

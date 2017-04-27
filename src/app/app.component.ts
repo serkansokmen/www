@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { SocialLinksService } from './social-links';
+import { SocialLinksService } from './social-links/social-links.service';
 import { Observable } from 'rxjs/Rx';
 
 @Component({
@@ -10,7 +10,6 @@ import { Observable } from 'rxjs/Rx';
   encapsulation: ViewEncapsulation.Native
 })
 export class AppComponent {
-
   socialLinks;
 
   constructor(private service: SocialLinksService) {
@@ -21,5 +20,4 @@ export class AppComponent {
         this.socialLinks = data;
       });
   }
-
 }

@@ -18,8 +18,7 @@ export class SocialLinkNodeComponent implements AfterViewInit {
   @ViewChild('drawCanvas') drawCanvas;
   context: CanvasRenderingContext2D;
 
-  constructor() {
-  }
+  constructor() { }
 
   ngAfterViewInit() {
     var w = 44;

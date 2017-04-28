@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Rx';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   providers: [SocialLinksService],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent {
   socialLinks;

@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation, ViewChild, ElementRef, Input, AfterViewIn
     </a>
   `,
   styleUrls: ['social-link-node.component.scss'],
-  encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class SocialLinkNodeComponent implements AfterViewInit {
 

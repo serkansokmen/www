@@ -11,7 +11,7 @@
   .info {
     padding: 10% 12px;
     border-radius: 0;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     font-weight: 400;
     display: flex;
     align-items: flex-end;
@@ -19,13 +19,23 @@
     align-content: stretch;
     flex-wrap: nowrap;
     opacity: 1;
+    line-height: 1.25;
   }
 
   .box {
     margin-right: 20px;
     margin-bottom: 40px;
+    max-width: 600px;
+    min-width: 280px;
     &.box-sm {
       flex-basis: 100px;
+    }
+
+    .caption {
+      margin-top: 12px;
+      margin-bottom: 42px;
+      font-size: 8px;
+      text-align: right;
     }
   }
 }

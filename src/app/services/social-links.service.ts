@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SocialLinksService {
 
-  data: Array<Object> = [{
+  private _data: Array<Object> = [{
     url: 'https://github.com/serkansokmen',
     title: 'github',
     imgSrc: '/assets/images/github.png'
@@ -49,7 +49,7 @@ export class SocialLinksService {
 
   getSocialLinks() {
     return new Promise((resolve, reject) => {
-      resolve(this.data);
+      resolve(this._data.concat([]));
     });
   }
 

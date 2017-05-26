@@ -1,17 +1,12 @@
 <div class="container">
   <div class="info">
-    <div class="box box-sm">
-      <app-avatar></app-avatar>
-    </div>
+    <!-- <div class="box box-sm"> -->
+      <!-- <app-avatar></app-avatar> -->
+    <!-- </div> -->
     <div class="box">
-      <app-title title=""></app-title>
-      <app-description>yakın
-hep yakın
-hepsi yakın
-hepsini yakın
-pepsileriyle
-yaşasın cola</app-description>
-      <app-social-links [items]="socialLinks"></app-social-links>
+      <markdown [path]="currentStoryPath"></markdown>
+      <div class="caption" [innerHTML]="currentStoryPath"></div>
+      <app-social-links [items]="linkItems"></app-social-links>
     </div>
   </div>
 </div>

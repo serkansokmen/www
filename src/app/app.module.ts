@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MarkdownModule } from 'angular2-markdown';
+
 import { AppComponent } from './app.component';
-import { AvatarComponent } from './avatar/avatar.component';
-import { TitleComponent } from './title/title.component';
-import { DescriptionComponent } from './description/description.component';
-import { SocialLinksComponent } from './social-links/social-links.component';
-import { SocialLinkNodeComponent } from './social-links/social-link-node.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { SocialLinksComponent } from './components/social-links/social-links.component';
+import { SocialLinkNodeComponent } from './components/social-links/social-link-node.component';
 
 
 @NgModule({
@@ -16,14 +16,13 @@ import { SocialLinkNodeComponent } from './social-links/social-link-node.compone
     AppComponent,
     AvatarComponent,
     SocialLinksComponent,
-    SocialLinkNodeComponent,
-    DescriptionComponent,
-    TitleComponent
+    SocialLinkNodeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

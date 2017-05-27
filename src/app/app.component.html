@@ -1,12 +1,12 @@
+<app-social-links [items]="linkItems"></app-social-links>
 <div class="container">
   <div class="info">
-    <!-- <div class="box box-sm"> -->
-      <!-- <app-avatar></app-avatar> -->
-    <!-- </div> -->
+    <div class="box box-sm">
+      <app-avatar></app-avatar>
+    </div>
     <div class="box">
       <markdown [path]="currentStoryPath"></markdown>
       <div class="caption" [innerHTML]="currentStoryPath"></div>
-      <app-social-links [items]="linkItems"></app-social-links>
     </div>
   </div>
 </div>

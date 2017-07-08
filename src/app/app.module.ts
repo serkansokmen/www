@@ -7,16 +7,12 @@ import { MarkdownModule } from 'angular2-markdown';
 
 import { AppComponent } from './app.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
-import { SocialLinksComponent } from './components/social-links/social-links.component';
-import { SocialLinkNodeComponent } from './components/social-links/social-link-node.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AvatarComponent,
-    SocialLinksComponent,
-    SocialLinkNodeComponent
+    AvatarComponent
   ],
   imports: [
     BrowserModule,

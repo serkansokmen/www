@@ -1,3 +1,4 @@
+<app-avatar></app-avatar>
 <nav>
   <div *ngFor="let item of linkItems">
     <a [href]="item.url" target="_blank" [title]="item.title">
@@ -5,14 +6,3 @@
     </a>
   </div>
 </nav>
-<div class="container">
-  <div class="info">
-    <div class="box box-sm">
-      <app-avatar></app-avatar>
-    </div>
-    <div class="box">
-      <markdown [path]="currentStoryPath"></markdown>
-      <div class="caption" [innerHTML]="currentStoryPath"></div>
-    </div>
-  </div>
-</div>

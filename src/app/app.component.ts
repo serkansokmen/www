@@ -29,11 +29,11 @@ export class AppComponent implements OnInit {
         this.linkItems = data;
       });
 
-    Observable.of(null)
-      .concatMap(() => Observable.timer(Math.random() * Math.floor(Math.random()) * 100))
-      .do(() => this.currentStoryPath = this.stories.getNext())
-      .repeat()  // optionally .repeat(10)
-      .subscribe();
+    // Observable.of(null)
+    //   .concatMap(() => Observable.timer(Math.random() * Math.floor(Math.random()) * 100))
+    //   .do(() => this.currentStoryPath = this.stories.getNext())
+    //   .repeat()  // optionally .repeat(10)
+    //   .subscribe();
   }
 
   ngOnInit() {

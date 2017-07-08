@@ -1,71 +1,28 @@
-.container {
+:host {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: nowrap;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  z-index: 100;
-  transition: all 0 ease-out;
 
-  .info {
-    padding: 10% 12px;
-    border-radius: 0;
-    font-size: 1.1rem;
-    font-weight: 400;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    align-content: stretch;
-    flex-wrap: nowrap;
-    opacity: 1;
-    line-height: 1.25;
+  app-avatar {
+    margin-bottom: 38px;
   }
 
-  .box {
-    margin-right: 20px;
-    margin-bottom: 40px;
-    max-width: 600px;
-    min-width: 280px;
-    &.box-sm {
-      flex-basis: 100px;
-    }
-
-    .caption {
-      margin-top: 12px;
-      margin-bottom: 42px;
-      font-size: 8px;
-      text-align: right;
-    }
-  }
-}
-
-nav {
-  margin-top: 2rem;
-  display: flex;
-  min-width: 24rem;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-
-  img {
-    margin-right: 8px;
-  }
-}
-
-@media (max-width: 700px) {
   nav {
-    justify-content: flex-end;
-    a {
-      margin-right: 1rem;
-    }
-  }
-  .container {
-    align-items: flex-start;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    .info {
-      width: 80%;
-      display: block;
+    img {
+      margin: 4px;
     }
+
   }
+
 }
+

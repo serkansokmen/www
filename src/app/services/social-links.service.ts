@@ -4,6 +4,10 @@ import { Injectable } from '@angular/core';
 export class SocialLinksService {
 
   private _data: Array<Object> = [{
+    url: 'mailto:me@serkansokmen.com',
+    title: 'email',
+    imgSrc: '/assets/images/email.png'
+  }, {
     url: 'https://github.com/serkansokmen',
     title: 'github',
     imgSrc: '/assets/images/github.png'

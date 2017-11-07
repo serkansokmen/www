@@ -1,11 +1,20 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/add/observable/of';
+
+interface SocialLinkItem {
+  url: string;
+  title: string;
+  imgSrc: string;
+}
 
 @Injectable()
 export class SocialLinksService {
 
-  private _data: Array<Object> = [{
+  private _data: SocialLinkItem[] = [{
     url: 'mailto:me@serkansokmen.com',
-    title: 'email',
+    title: 'contact',
     imgSrc: '/assets/images/email.png'
   }, {
     url: 'https://github.com/serkansokmen',
@@ -52,9 +61,7 @@ export class SocialLinksService {
   constructor() {}
 
   getSocialLinks() {
-    return new Promise((resolve, reject) => {
-      resolve(this._data.concat([]));
-    });
+    return Observable.of(this._data);
   }
 
 }

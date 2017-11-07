@@ -1,8 +1,8 @@
 h1 {
   background: transparent url('/assets/images/avatar.jpg') center center no-repeat;
   background-size: cover;
-  width: 12rem;
-  height: 12rem;
+  width: 120px;
+  height: 120px;
   text-indent: -9999px;
   border-radius: 16px;
   border: 2px solid white;
@@ -13,12 +13,3 @@ h1 {
   }
 }
 
-img {
-  border-radius: 50%;
-  min-width: 17.2rem;
-  min-height: 17.2rem;
-  max-width: 18.2rem;
-  max-height: 18.2rem;
-  border: 2px solid black;
-  box-shadow: inset 0px 0px 16px 4px rgba(0,0,0,0.28);
-}

@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
-  templateUrl: 'avatar.component.html',
+  template: '<h1>Serkan Sokmen</h1>',
   styleUrls: ['avatar.component.scss'],
   encapsulation: ViewEncapsulation.Emulated
 })

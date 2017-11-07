@@ -21,4 +21,8 @@ export class AppComponent implements OnInit {
     this.socialLinks$ = this.socialLinks.getSocialLinks();
   }
 
+  launchURL(url: string) {
+    window.location.href = url;
+  }
+
 }

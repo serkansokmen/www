@@ -1,22 +1,16 @@
 <div class="top">
   <app-avatar></app-avatar>
   <div>
-    <h1>Serkan Sökmen</h1>
+    <h1>E. Serkan Sökmen</h1>
     <h3>Sculptor / App Developer</h3>
     <p>Currently living in Istanbul, Turkiye</p>
+    <nav *ngIf="socialLinks$ | async as socialLinks">
+      <button *ngFor="let item of socialLinks"
+        mat-icon-button
+        matTooltip="{{ item.tooltip }}"
+        (click)="launchURL(item.url)">
+        <mat-icon [fontIcon]="'icon-' + item.iconName"></mat-icon>
+      </button>
+    </nav>
   </div>
 </div>
-<nav *ngIf="socialLinks$ | async as socialLinks">
-  <div *ngFor="let item of socialLinks">
-    <a [href]="item.url"
-      [title]="item.title"
-      [innerHTML]="item.title"
-      [ngStyle]="{
-      'background-image': 'url(' + item.imgSrc + ')'
-    }"
-      target="_blank">
-      <span class="tooltip">item.title</span>
-    </a>
-  </div>
-</nav>
-

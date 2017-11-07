@@ -1,18 +1,15 @@
 h1 {
-    background: transparent url('/assets/images/avatar.gif') center center no-repeat;
-    background-size: cover;
-    width: 24rem;
-    height: 24rem;
-    text-indent: -9999px;
+  background: transparent url('/assets/img/avatar.jpg') center center no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  text-indent: -9999px;
+  border-radius: 16px;
+  border: 2px solid white;
+  box-shadow: 0px 30px 60px -12px rgba(0,0,0,0.22);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/assets/img/avatar@2x.jpg');
+  }
 }
 
-img {
-  border-radius: 50%;
-  min-width: 17.2rem;
-  min-height: 17.2rem;
-  max-width: 18.2rem;
-  max-height: 18.2rem;
-  border: 2px solid black;
-  -webkit-box-shadow: inset 0px 0px 16px 4px rgba(0,0,0,0.28);
-          box-shadow: inset 0px 0px 16px 4px rgba(0,0,0,0.28);
-}

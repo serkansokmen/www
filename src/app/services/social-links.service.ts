@@ -1,56 +1,79 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/add/observable/of';
+
+interface SocialLinkItem {
+  url: string;
+  title: string;
+  iconName: string;
+  tooltip: string;
+}
 
 @Injectable()
 export class SocialLinksService {
 
-  private _data: Array<Object> = [{
+  private _data: SocialLinkItem[] = [{
+    url: 'mailto:me@serkansokmen.com?subject=Contact',
+    title: 'Email',
+    iconName: 'mail',
+    tooltip: 'Contact me',
+  }, {
     url: 'https://github.com/serkansokmen',
-    title: 'github',
-    imgSrc: '/assets/images/github.png'
+    title: 'Github',
+    iconName: 'github',
+    tooltip: 'Github',
   }, {
     url: 'https://vimeo.com/serkansokmen',
-    title: 'vimeo',
-    imgSrc: '/assets/images/vimeo.png'
+    title: 'Vimeo',
+    iconName: 'vimeo',
+    tooltip: 'Vimeo',
   }, {
     url: 'https://sketchfab.com/serkansokmen',
-    title: 'sketchfab',
-    imgSrc: '/assets/images/sketchfab.png'
+    title: 'Sketchfab',
+    iconName: 'sketchfab',
+    tooltip: 'Sketchfab',
   }, {
     url: 'https://behance.net/serkansokmen',
-    title: 'behance',
-    imgSrc: '/assets/images/behance.png'
+    title: 'Behance',
+    iconName: 'behance',
+    tooltip: 'Behance',
   }, {
     url: 'https://instagram.com/serkansokmen',
-    title: 'instagram',
-    imgSrc: '/assets/images/instagram.png'
+    title: 'Instagram',
+    iconName: 'instagram',
+    tooltip: 'Instagram',
   }, {
     url: 'https://soundcloud.com/serkansokmen',
-    title: 'soundcloud',
-    imgSrc: '/assets/images/soundcloud.png'
+    title: 'Soundcloud',
+    iconName: 'soundcloud',
+    tooltip: 'Soundcloud',
   }, {
     url: 'https://facebook.com/serkan.sokmen',
-    title: 'facebook',
-    imgSrc: '/assets/images/facebook.png'
+    title: 'Facebook',
+    iconName: 'facebook',
+    tooltip: 'Facebook',
   }, {
     url: 'https://twitter.com/serkansokmen',
-    title: 'twitter',
-    imgSrc: '/assets/images/twitter.png'
+    title: 'Twitter',
+    iconName: 'twitter',
+    tooltip: 'Twitter',
   }, {
     url: 'https://www.linkedin.com/in/serkansokmen',
-    title: 'linkedin',
-    imgSrc: '/assets/images/linkedin.png'
+    title: 'Linkedin',
+    iconName: 'linkedin',
+    tooltip: 'Linkedin',
   }, {
     url: 'https://zepzero.deviantart.com',
-    title: 'deviantart',
-    imgSrc: '/assets/images/deviantart.png'
+    title: 'Deviantart',
+    iconName: 'deviantart',
+    tooltip: 'Deviantart',
   }];
 
   constructor() {}
 
   getSocialLinks() {
-    return new Promise((resolve, reject) => {
-      resolve(this._data.concat([]));
-    });
+    return Observable.of(this._data);
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnInit, HostListener } from '@angular/core';
 import { SocialLinksService } from './services/social-links.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',

@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-
-import 'rxjs/add/observable/of';
+import { Observable, of } from 'rxjs';
 
 interface SocialLinkItem {
   url: string;
@@ -73,7 +71,7 @@ export class SocialLinksService {
   constructor() {}
 
   getSocialLinks() {
-    return Observable.of(this._data);
+    return of(this._data);
   }
 
 }

@@ -24,14 +24,11 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 @include angular-material-theme($candy-app-theme);
 
 * {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
   color: #232323;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
   color: #232323;
   font-size: 26px;
 }

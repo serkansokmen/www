@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/serkansokmen",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/TemplateData/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Build/UnityLoader.js",
+              "src/assets/TemplateData/UnityProgress.js"
+            ]
           },
           "configurations": {
             "production": {

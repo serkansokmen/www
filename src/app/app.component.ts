@@ -1,13 +1,16 @@
-import { Component, ViewEncapsulation, OnInit, HostListener } from '@angular/core';
-import { SocialLinksService } from './services/social-links.service';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { SocialLinksService } from './shared/social-links.service';
+import { UnityService } from './shared/unity.service';
 import { Observable } from 'rxjs';
+import { SokmenComponent } from './components/sokmen/sokmen.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   providers: [
-    SocialLinksService
+    SocialLinksService,
+    UnityService,
   ],
   encapsulation: ViewEncapsulation.Emulated
 })
@@ -19,10 +22,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.socialLinks$ = this.socialLinks.getSocialLinks();
-  }
-
-  launchURL(url: string) {
-    window.location.href = url;
   }
 
 }

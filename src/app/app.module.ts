@@ -1,23 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatIconModule, MatTooltipModule } from '@angular/material';
 
+import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { SokmenComponent } from './components/sokmen/sokmen.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatTooltipModule,
+    SharedModule,
   ],
   declarations: [
     AppComponent,
-    AvatarComponent
+    AvatarComponent,
+    SokmenComponent,
+    InfoComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
